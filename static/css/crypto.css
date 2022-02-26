@@ -1,69 +1,104 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 main {
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .glass {
-    background: white;
-    min-height: 80vh;
-    width: 60%;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.3)
-    );
-    border-radius: 2rem;
-    z-index: 2;
-    backdrop-filter: blur(2rem);
-    display: flex;
-  }
+  background: white;
+  min-height: 70vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(90, 77, 77, 0.945)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
 table {
-	width: 90%;
-	margin: auto;
-	text-align: center;
-	table-layout: fixed;
+width: 90%;
+margin: auto;
+text-align: center;
+table-layout: fixed;
 }
 
 table,
 td,
 tr {
-	padding: 12px;
-	color: wheat;
-	background: linear-gradient(to right top, #331c63, #94d5e6);
+padding: 25px;
+color: wheat;
+background-color: #fc9842;
+background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
 
-	border: 1px solid black;
-	border-collapse: collapse;
-	font-size: 20px;
-	font-family: 'Lucida Sans',
-		'Lucida Sans Regular',
-		'Lucida Grande',
-		'Lucida Sans Unicode',
-		Geneva, Verdana, sans-serif;
+border: 1px solid black;
+border-collapse: collapse;
+font-size: 20px;
+font-family: 'Lucida Sans',
+  'Lucida Sans Regular',
+  'Lucida Grande',
+  'Lucida Sans Unicode',
+  Geneva, Verdana, sans-serif;
 }
 
 /* Apply css properties to th */
 th {
-	color: white;
-	border: 1px solid black;
-	border-collapse: collapse;
-	background: cadetblue;
+color: rgb(255, 255, 251);
+border: 1px solid black;
+border-collapse: collapse;
+background: cadetblue;
 }
 
 /* Apply hover effect to td */
 td:hover {
-	background: orangered;
+background: orangered;
+}
+ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  /* position: fixed; */
 }
 
-  
+ul li {
+  position: relative;
+  list-style: none;
+  width:80px;
+  height:80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
 
-  
+ul li a{
+  position: relative;
+  text-decoration: none;
+  color: var(--clr);
+  z-index:10;
+  font-size: 2em;
+  transition: 0.5s;
+}
+ul li:hover a{
+   font-size: 3em;
+   filter:drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 30px var(--clr))
+  ;
+}
 
-  
+
+
+
+
+

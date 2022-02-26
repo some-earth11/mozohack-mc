@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    #print("HW")
     return render_template('crypto.html')
 
 if __name__== "__main__":
