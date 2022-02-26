@@ -6,3 +6,7 @@ print(yup('BTC'))
 print(yup('ETH'))
 print(yup('SOL'))
 print(yup('LTC'))
+print(yup('DOGE'))
+print(yup('ADA'))
+print(yup('SHIB'))
+

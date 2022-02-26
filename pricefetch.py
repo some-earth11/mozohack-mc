@@ -1,6 +1,5 @@
 from requests import Request, Session
 import json
-import pprint as pp
 
 url='https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest'
 
@@ -22,4 +21,3 @@ def yup(token):
     
     return json.loads(response.text)['data'][token][0]['quote']['INR']['price']
 
-#pp.pprint(yup())
