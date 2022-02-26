@@ -3,9 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-
-  
-   main {
+main {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -13,8 +11,7 @@
     align-items: center;
     justify-content: center;
   }
-    
-  .glass {
+.glass {
     background: white;
     min-height: 80vh;
     width: 60%;
@@ -28,6 +25,45 @@
     backdrop-filter: blur(2rem);
     display: flex;
   }
+table {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	table-layout: fixed;
+}
+
+table,
+td,
+tr {
+	padding: 12px;
+	color: wheat;
+	background: linear-gradient(to right top, #331c63, #94d5e6);
+
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-size: 20px;
+	font-family: 'Lucida Sans',
+		'Lucida Sans Regular',
+		'Lucida Grande',
+		'Lucida Sans Unicode',
+		Geneva, Verdana, sans-serif;
+}
+
+/* Apply css properties to th */
+th {
+	color: white;
+	border: 1px solid black;
+	border-collapse: collapse;
+	background: cadetblue;
+}
+
+/* Apply hover effect to td */
+td:hover {
+	background: orangered;
+}
+
+  
+
   
 
   
