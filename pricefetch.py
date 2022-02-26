@@ -1,12 +1,14 @@
 from requests import Request, Session
 import json
-import pprint
+import pprint as pp
 
 url='https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest'
 
+token = 'BTC'
+
 def yup():
     parameters = {
-        'symbol':'BTC',
+        'symbol': token,
         'convert':'INR'
     }
 
@@ -20,6 +22,6 @@ def yup():
 
     response = session.get(url, params=parameters)
     # print("PRICE OF BTC(INR) : ")
-    return json.loads(response.text)['data']['BTC'][0]['quote']['INR']['price']
+    return json.loads(response.text)['data'][token][0]['quote']['INR']['price']
 
-print(yup())
+pp.pprint(yup())
