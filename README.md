@@ -1,0 +1,2 @@
+# mozohack-mc
+Crypto currency
