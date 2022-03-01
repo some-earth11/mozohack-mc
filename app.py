@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
 def home():
-    btc = request.form["amountbtc"]
+    if request.method == "POST":
+        btc = request.form["amountbtc"]
         eth = request.form["amounteth"]
         ltc = request.form["amountltc"]
         sol = request.form["amountsol"]
