@@ -5,11 +5,23 @@ app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
 def home():
-    if request.method == "POST":
-        btc = request.form["amountbtc"]
-        tbtc = float(btc)*yup('BTC')*0.3
+    btc = request.form["amountbtc"]
+        eth = request.form["amounteth"]
+        ltc = request.form["amountltc"]
+        sol = request.form["amountsol"]
+        doge = request.form["amountdoge"]
+        shib = request.form["amountshib"]
 
-        return redirect(url_for("user",usr=tbtc))
+        tbtc = float(btc)*yup('BTC')*0.3
+        teth = float(eth)*yup('ETH')*0.3
+        tltc = float(ltc)*yup('LTC')*0.3
+        tsol = float(sol)*yup('SOL')*0.3
+        tdoge = float(doge)*yup('DOGE')*0.3
+        tshib = float(shib)*yup('SHIB')*0.3
+
+        total = round(tbtc+teth+tltc+tsol+tdoge+tshib)
+
+        return redirect(url_for("user",usr=total))
     else:
         return render_template("crypto.html")
 

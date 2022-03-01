@@ -7,49 +7,52 @@
         <table>
           <thead>
             <tr id="header">
-              <th>Coins</th>
-              <th>Amount Owned</th>
-              <th>Amount in INR</th>
+              <!-- <th>Coins</th>
+              <th>Amount Owned</th> -->
             </tr>
           </thead>
           <tbody>
+            <form action="#" method="post">
             <tr>
               <td><i class="fa-brands fa-bitcoin"></i>Bitcoin</td>
-              <td class="amount"><form action="#" method="post"><input type="text" name="amountbtc" placeholder="Enter Amount"></form></td>
-              <td class="amountINR">$520.18</td>
+              <td class="amount"><input type="text" name="amountbtc" value="0"></td>
+              
             </tr>
             <tr>
               <td>
                 <span class="fa-brands fa-ethereum"></span>Etherum
               </td>
-              <td class="amount"><input type="text" name="amounteth" placeholder="Enter Amount"></td>
-              <td class="amountINR">$520.18</td>
+              <td class="amount"><input type="text" name="amounteth" value="0"></td>
+             
             </tr>
             <tr>
               <td><i class="fa-solid fa-litecoin-sign"></i>Litecoin</td>
-              <td class="amount"><input type="text" name="amountltc" placeholder="Enter Amount"></td>
-              <td class="amountINR">$520.18</td>
+              <td class="amount"><input type="text" name="amountltc" value="0"></td>
+              
             </tr>
             <tr>
-              <td><i class="fa-brands fa-bitcoin"></i>Solano</td>
-              <td class="amount"><input type="text" name="amount" placeholder="Enter Amount"></td>
-              <td class="amountINR">$520.18</td>
+              <td><i class="fa-brands fa-bitcoin"></i>Solana</td>
+              <td class="amount"><input type="text" name="amountsol" value="0"></td>
+              
             </tr>
             <tr>
               <td><i class="fa-brands fa-bitcoin"></i>DogeCoin</td>
-              <td class="amount"><input type="text" name="amount" placeholder="Enter Amount"></td>
-              <td class="amountINR">$520.18</td>
+              <td class="amount"><input type="text" name="amountdoge" value="0"></td>
+              
             </tr>
             <tr>
-              <td><i class="fa-brands fa-bitcoin"></i>Shiba</td>
-              <td class="amount"><input type="text" name="amount" placeholder="Enter Amount"></td>
-              <td class="amountINR">$520.18</td>
+              <td><i class="fa-brands fa-bitcoin"></i>Shiba Inu</td>
+              <td class="amount"><input type="text" name="amountshib" value="0"></td>
+              
             </tr>
+            <input type="submit" value="submit">
+            </form>
           </tbody>
         </table>
+        <button value="reset"><a href="/">Check Again</a></button>
       </section>
     </main>
-    <h1>Tax to be Paid: INR {{usr}}</h1>
+    <h1><u>Tax to be Paid:</u> INR {{usr}}</h1>
     <footer>
       <ul>
         <li style="--clr:#e6e6f3;">
